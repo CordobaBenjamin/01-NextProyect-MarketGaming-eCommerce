@@ -1,9 +1,12 @@
-import Image from "next/image";
+import React from 'react';
+import IndexLayout from './layout';
 
-export default function Home() {
+const Index = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hola Mundo</h1>
-    </main>
+    <IndexLayout>
+      {null}
+    </IndexLayout>
   );
-}
+};
+
+export default Index;
