@@ -1,9 +1,9 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Header from './mainComponents/header';
-import Footer from './mainComponents/footer';
-import Article from './mainComponents/article';
+import Header from './indexComponents/header';
+import Footer from './indexComponents/footer';
+import Article from './indexComponents/article';
 import "./cssStyles/page.css";
 
 const inter = Inter({ subsets: ['latin'] });
