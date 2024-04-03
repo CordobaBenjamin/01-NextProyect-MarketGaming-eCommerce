@@ -151,15 +151,17 @@ body {
     box-shadow: inset 3px 3px 3px 3px #101010;
   }
   
-  .product_div {
+  #product_div {
+    height: auto; 
+    padding-top: 30px;
     background-color: black;
   }
   
-  .product_div > section > div > h5 {
+  #product_div > section > div > h5 {
     margin-left: 30px;
   }
   
-  .product_div > section > div {
+  #product_div > section > div {
     box-shadow: inset 3px 3px 3px 3px #101010;
     text-shadow: 1px 1px 1px 1px #0a0a0a;
     background-color: #282828;

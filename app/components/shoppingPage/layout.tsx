@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 import './cssStyles/productsStyle.css'
 import Header from './shoppingComponents/header';
 import Footer from './shoppingComponents/footer';
-import Main from './shoppingComponents/main';
-
+import Product_div from './shoppingComponents/main';
+import Aside from './shoppingComponents/aside';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,9 +18,20 @@ export const metadata: Metadata = {
 const ShoppingLayout = ({ children }: { children: React.ReactNode }) => {
     return (
       <html lang="en">
+
         <Header/>
-        <Main/>
+
+        <main className='product'>
+              <article>
+
+                <Product_div/>
+                <Aside/>
+
+              </article>
+        </main>
+     
         <Footer/>
+
       </html>
     );
   };

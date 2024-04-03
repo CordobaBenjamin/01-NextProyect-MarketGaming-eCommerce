@@ -3,7 +3,7 @@ import ProductCardGeneration from '.././scripts/productsCards';
 import { ProductProps } from '../interfaces';
 import productsBaseData from '../scripts/dataBase_products';
 
-const Main: React.FC = () => {
+const Product_div: React.FC = () => {
   // Inicializa el estado con la base de datos de productos
   const [products, setProducts] = useState<ProductProps[]>(productsBaseData);
 
@@ -28,7 +28,7 @@ const Main: React.FC = () => {
   );
 };
 
-export default Main;
+export default Product_div;
 
 
 
