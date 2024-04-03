@@ -1,23 +1,43 @@
 import productsBaseData from "./dataBase_products";
-import Image from 'next/image';
-import {Product, ProductCardProps} from '../interfaces'
+import {ProductProps, ProductCardProps} from '../interfaces'
 
-  const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => (
-    <section className="productosdiv" id={product.categoria}>
+ 
+const ProductList = () => (
+  <>
+    {productsBaseData.map(({ id, nombre, categoria, precio, img }) => (
+      <ProductCardGeneration
+        key={id}
+        categoria={categoria}
+        nombre={nombre}
+        precio={precio}
+        img={img}
+      />
+    ))}
+  </>
+);
+
+const ProductCardGeneration: React.FC<ProductProps> = ({ categoria, nombre, precio, img }) => (
+  <>
+      <section className="productosdiv" id={categoria}>
 
         <div className="imgDiv">
-            <img src={product.img} alt={product.nombre} id={product.arreglo} />
+          <img src={img} alt={nombre} />
         </div>
-
+        
         <div className="priceticket">
-            <h5>{product.nombre}</h5>
-            <h5>${product.precio}</h5>
-            <button onClick={() => onAddToCart(product)} className="buttonshop">
-            Sumar al carrito
-            </button>
+          <h5>{nombre}</h5>
+          <h5>${precio}</h5>
         </div>
 
-    </section>
-  );
+      </section>
+  </> 
+);
 
-  export default ProductCard;
+export default ProductCardGeneration;
+
+
+
+  // const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart })
+  // <button onClick={() => onAddToCart(product)} className="buttonshop">
+  // Sumar al carrito
+  // </button>

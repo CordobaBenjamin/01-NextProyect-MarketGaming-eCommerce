@@ -1,14 +1,6 @@
-interface Product {
-  stock:number,
-  categoria:string,
-  img:string,
-  nombre:string,
-  precio:number,
-  arreglo?:string,
-  id:number,
-}
+import { ProductProps, ProductCardProps } from '../interfaces';
 
-const productsBaseData:Product[] = [
+const productsBaseData:ProductProps[] = [
     {
       id: 1,
       nombre: "Marvo k656",

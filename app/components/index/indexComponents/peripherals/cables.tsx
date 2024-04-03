@@ -3,7 +3,7 @@ import Image from "next/image";
 const CablesComponents = () => {
     return (
         <div className="Cables">
-            <a href="./HTML Pagess/Marketproduct.html">
+            <a href="/pages/home">
                 <div className="image-wrapper">
                     <Image 
                         src="/images/src app/Cables.png" 

@@ -6,27 +6,27 @@ import KeyboardComponents from "./peripherals/keyboard"
 import MouseComponents from "./peripherals/mouse"
 
 
-const Article = () => {
-    return(
-        <article className="main" id="pages"> 
+export const Article = () => {
+  return (
+    <article className="main" id="pages"> 
 
-        <div className="one-file"> 
-            <MouseComponents/>
-            <KeyboardComponents/>
-        </div>  
+    <div className="one-file"> 
+        <MouseComponents/>
+        <KeyboardComponents/>
+    </div>  
 
-        <div className="two-file">
-            <HeadphonesComponents/>
-            <Components/>
-        </div>
+    <div className="two-file">
+        <HeadphonesComponents/>
+        <Components/>
+    </div>
 
-        <div className="three-file">
-            <GamesComponents/>
-            <CablesComponents/>
-        </div>    
-            
-    </article>
-    )
-};
+    <div className="three-file">
+        <GamesComponents/>
+        <CablesComponents/>
+    </div>    
+        
+</article>
+  )
+}
 
 export default Article;

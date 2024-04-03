@@ -1,7 +1,11 @@
+'use client'
 import React from 'react';
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import ProductsContainer from './shoppingComponents/main';
+import './cssStyles/productsStyle.css'
+import Header from './shoppingComponents/header';
+import Footer from './shoppingComponents/footer';
+import Main from './shoppingComponents/main';
 
 
 const inter = Inter({ subsets: ['latin'] });
@@ -14,7 +18,9 @@ export const metadata: Metadata = {
 const ShoppingLayout = ({ children }: { children: React.ReactNode }) => {
     return (
       <html lang="en">
-        <ProductsContainer/>
+        <Header/>
+        <Main/>
+        <Footer/>
       </html>
     );
   };
