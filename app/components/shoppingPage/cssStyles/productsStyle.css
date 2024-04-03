@@ -196,7 +196,7 @@ body {
     text-align: center;
   }
   
-  .buttonshop {
+  .buttonForShop {
     cursor: pointer;
   }
   
@@ -225,7 +225,7 @@ body {
     margin: 5px;
   }
   
-  .priceticket > .buttonshop {
+  .priceticket > .buttonForShop {
     border-radius: 5px;
     width: 150px;
     height: 30px;

@@ -47,6 +47,14 @@ export const Aside = () => {
 
                             </div>
                         </div>
+                        
+                        <section id="productoListDiv">
+                            <h3 className="productoh3">Productos Agregados</h3>
+
+                            <div id="productList">
+                            </div>
+                            
+                        </section>
         </aside>
     </> )};
 
