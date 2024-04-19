@@ -1,3 +1,6 @@
+'use client'
+import { useMode } from "@/app/css/colors Switcher/modeSwitcher"
+import Colors from "@/app/css/colors Switcher/colors"
 import CablesComponents from "./peripherals/cables"
 import Components from "./peripherals/components"
 import GamesComponents from "./peripherals/games"
@@ -7,23 +10,29 @@ import MouseComponents from "./peripherals/mouse"
 
 
 export const Article = () => {
+
+  const { mode } = useMode();
+  const {bg, textMain, textSecondary, overlap } = Colors[mode];
+
   return (
-    <article className="main" id="pages"> 
+    <article className={`${bg}`} id="pages">  
 
-    <div className="one-file"> 
-        <MouseComponents/>
-        <KeyboardComponents/>
-    </div>  
+    <section className={`flex mx-auto flex-col w-fit lg:flex-row animate__animated animate__fadeIn animate__slow `}> 
+      <div className={`flex flex-row mx-10 xl:flex-col glow `}> 
+          <MouseComponents/>
+          <KeyboardComponents/>
+      </div>  
 
-    <div className="two-file">
-        <HeadphonesComponents/>
-        <Components/>
-    </div>
+      <div className={`flex flex-row mx-10 xl:flex-col glow `}>
+          <HeadphonesComponents/>
+          <Components/>
+      </div>
 
-    <div className="three-file">
-        <GamesComponents/>
-        <CablesComponents/>
-    </div>    
+      <div className={`flex flex-row mx-10 xl:flex-col glow `}>
+          <GamesComponents/>
+          <CablesComponents/>
+      </div>    
+    </section>
         
 </article>
   )

@@ -8,6 +8,7 @@ const useCart = () => {
         localStorage.setItem('cartTotal', newTotal.toString());
     }, []);
 
+    
     return { addToCart };
 };
 

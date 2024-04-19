@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import ProductCardGeneration from '.././scripts/productsCards';
 import { ProductProps } from '../interfaces';

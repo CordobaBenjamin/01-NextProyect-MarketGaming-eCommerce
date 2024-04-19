@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glow {
+    0% {
+      opacity: 1; /* Opacidad al 100% al inicio de la animación */
+    }
+    50% {
+      opacity: 0.9; /* Opacidad al 70% a la mitad de la animación */
+    }
+    100% {
+      opacity: 1; /* Opacidad al 100% al final de la animación */
+    }
+  }
+
+.glow {
+    animation: glow 1s ease infinite;
+  }
+
+.Marketgaming {
+    background-color: brown;
+}

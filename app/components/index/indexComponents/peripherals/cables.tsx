@@ -1,20 +1,27 @@
 import Image from "next/image";
+import { useMode } from "@/app/css/colors Switcher/modeSwitcher";
+import Colors from "@/app/css/colors Switcher/colors";
 
 const CablesComponents = () => {
+
+    const { mode } = useMode();
+    const { bg, textMain, textSecondary, overlap, overlap2 } = Colors[mode];
+  
     return (
-        <div className="Cables">
-            <a href="/pages/home">
-                <div className="image-wrapper">
-                    <Image 
-                        src="/images/src app/Cables.png" 
-                        alt="Cables" 
-                        width={300}  
-                        height={200}
-                    />
-                </div>
-            </a>
-            <h4> Cables </h4> 
+      <div className={` ${overlap2} rounded-md w-fit mx-3 my-6  xl:my-10`}>
+        <a href="/home">
+        <div className="relative w-48 h-48 lg:w-64 lg:h-64">
+          <Image
+            src="/images/src app/wires_icon.png"
+            alt="Cables"
+            layout="fill"
+            objectFit="cover" 
+            className="rounded-md" 
+          />
         </div>
+          <h4 className={`${textMain} w-fit mx-auto text-2xl font-semibold`}> Cables </h4>{" "}
+        </a>
+      </div>
     );
 };
 
