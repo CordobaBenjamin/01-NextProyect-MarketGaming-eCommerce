@@ -16,19 +16,9 @@ export const metadata: Metadata = {
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
-      <head>
-        <title>Market Gaming</title>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-      </head>
-
-      <body className={`bg-bodyBg`}>
+      <div className={`bg-bodyBg`}>
         <ModeProvider>{children}</ModeProvider>
-      </body>
-    </html>
+      </div>
   );
 };
 
