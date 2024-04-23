@@ -25,7 +25,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         />
       </head>
 
-      <body className={``}>
+      <body className={`bg-bodyBg`}>
         <ModeProvider>{children}</ModeProvider>
       </body>
     </html>

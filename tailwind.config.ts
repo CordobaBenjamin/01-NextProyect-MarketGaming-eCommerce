@@ -8,11 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: '#fecdd3',
+        secondary: '#fecdd3',
+        tertiary : '#f59e0b',
+        quaternary: '#fecdd3',
+        accent: '#171717',
+        accentSecondary: '#d4d4d4',
+        accentTertiary: '#fecdd3',
+        bodyBg: '#fdf4ff',
+        shadowBlack: 'drop-shadow(0 35px 65px rgba(0, 0, 0, 1))',
       },
+      fontFamily: {
+        'general': ['Lexend Deca', 'sans-serif']
+      },
+      fontSize: {
+      },
+      // Más configuraciones extendidas según tus necesidades
     },
   },
   plugins: [],
